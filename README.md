@@ -5,17 +5,13 @@ rm update.sh
 wget https://github.com/hokagelegend9999/force/raw/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
 
 ``
-DOWN GRADE
+## DOWN GRADE
 
 
-# 1. Stop service Xray terlebih dahulu
+~~~
 sudo systemctl stop xray
-# atau jika nama servicenya berbeda: sudo systemctl stop xray-core
-
-# 2. Backup binary lama (misalnya di /usr/local/bin/xray)
+sudo systemctl stop xray-core
 sudo mv /usr/local/bin/xray /usr/local/bin/xray.bak.v25.10
-
-# 3. Download file zip versi yang diinginkan
 wget https://github.com/XTLS/Xray-core/releases/download/v25.1.30/Xray-linux-64.zip
 
 # 4. Unzip
